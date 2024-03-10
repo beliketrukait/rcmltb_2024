@@ -69,8 +69,8 @@ class RcloneCopy:
             "--ignore-case",
             source,
             destination,
+            "--transfers 1",
             "--drive-acknowledge-abuse",
-            "--buffer-size 128M",
             "-P",
 
         ]
