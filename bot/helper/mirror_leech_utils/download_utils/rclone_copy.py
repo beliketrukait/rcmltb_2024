@@ -71,6 +71,8 @@ class RcloneCopy:
             destination,
             "--drive-acknowledge-abuse",
             "-P",
+            "--transfers 1",
+            " --buffer-size 128M",
         ]
 
         await setRcloneFlags(cmd, "copy")
