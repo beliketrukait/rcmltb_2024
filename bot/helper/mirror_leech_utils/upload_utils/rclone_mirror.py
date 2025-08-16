@@ -45,7 +45,8 @@ class RcloneMirror:
             mime_type = "File"
 
         conf_path = await get_rclone_path(self.__user_id, self.message)
-        folder_name = self.name.replace(".", "")
+        #folder_name = self.name.replace(".", "")
+        folder_name = self.name
         is_multi_remote_up = config_dict["MULTI_REMOTE_UP"]
         is_sudo_filter = CustomFilters.sudo_filter("", self.message)
 
